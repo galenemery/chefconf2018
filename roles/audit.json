@@ -1,0 +1,20 @@
+{
+  "name": "audit",
+  "description": "Audit Role",
+  "default_attributes": {
+      "audit": {
+        "inspec_version": "2.1.59",
+        "fetcher": "chef-server",
+        "reporter": "chef-server-automate",
+        "profiles": [
+            {
+            "name": "disa-stig-el7",
+            "path": "/home/ec2-user/inspec-profile-disa_stig-el7"
+            }
+        ]
+    }
+  },
+  "run_list": [
+    "recipe[demo-client]"
+  ]
+}
