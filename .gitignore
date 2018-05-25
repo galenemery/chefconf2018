@@ -13,6 +13,10 @@
 .chef/*.pem
 .chef/encrypted_data_bag_secret
 
+## Ignore Inspec files
+**/inspec.lock
+**/.gitkeep
+
 ## Ignore Chef-Zero files
 clients
 nodes
